@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <script src="https://kit.fontawesome.com/f6833f0619.js" crossorigin="anonymous"></script>
+
+  <title>Navigation with Lists</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Add a LINK element or a STYLE element here with @import to attach your external CSS -->
+  <link rel="stylesheet" href="./css/styles.css" />
+
+</head>
+
+<body>
+  <header>
+    <div class="searchContainer">
+      <div id="logoContainer">
+        <img id="logoImg" src="https://i.pinimg.com/originals/eb/4a/59/eb4a593f8a852e1ef612402ee53fdd41.jpg">
+
+      </div>
+      <div id="searchContent">
+        <input id="searchInput" type="text">
+        <div id="searchIconContainer">
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
+      <div id="cartContainer">
+        <div id="cartIconContainer">
+          <i class="fas fa-shopping-cart"></i>
+          <p id="productNum">1</p>
+        </div>
+        
+      </div>
+    </div>
+    <div class="main-menu" id='main-menu'>
+      <div class="o-container">
+        <nav class='navigation'>
+          <ul class="nopulet ">
+            <li class="first-level-subnav"><a onclick="increaseTotalProductCount()" href="javascript:void(0)" class="nav_link_lv1">
+              Ballpoint Pen <span class="icon-circle-right"></span>
+            </a>
+              <ul class="second-level-subnav">
+                <li><a href="javascript:void(0)">Local Weather</a></li>
+                <li><a href="javascript:void(0)">Hourly Forecast</a></li>
+                <li><a href="javascript:void(0)">14 Day Trend</a></li>
+                <li><a href="javascript:void(0)">Watches &amp; Warnings</a></li>
+                <li><a href="javascript:void(0)">Weather Maps</a></li>
+                <li><a href="javascript:void(0)">Satellite &amp; Radar Maps</a></li>
+                <li><a href="javascript:void(0)">Lightning Maps</a></li>
+                <li><a href="javascript:void(0)">Statistics</a></li>
+                <li><a href="javascript:void(0)">Sun &amp; Normals</a></li>
+                <li><a href="javascript:void(0)">Sun, Moon &amp; Seasons</a></li>
+                <li><a href="javascript:void(0)">Tropical Storm Centre</a></li>
+                <li><a href="javascript:void(0)">Video on Demand</a></li>
+                <li><a href="javascript:void(0)">Weather Cameras</a></li>
+                <li><a href="javascript:void(0)">Your Weather Gallery</a></li>
+              </ul>
+            </li>
+            <li class="first-level-subnav"><a onclick="decreaseTotalProductCount()" href="javascript:void(0)">Pencil</a>
+              <ul class="second-level-subnav">
+                <li><a href="javascript:void(0)">Airport Forecast</a></li>
+                <li><a href="javascript:void(0)">Attractions</a></li>
+                <li><a href="javascript:void(0)">Flight Tracker</a></li>
+                <li><a href="javascript:void(0)">Sunshine Destinations</a></li>
+                <li><a href="javascript:void(0)">Travel Information</a></li>
+                <li><a href="javascript:void(0)">Vacation Bound(New)</a></li>
+              </ul>
+            </li>
+            <li class="first-level-subnav"><a href="javascript:void(0)">Highlighter</a>
+              <ul class="second-level-subnav">
+                <li><a href="javascript:void(0)">Canadian Highway Forecast</a></li>
+                <li><a href="javascript:void(0)">Highway Conditions</a></li>
+                <li><a href="javascript:void(0)">Road Construction</a></li>
+                <li><a href="javascript:void(0)">Traffic Cameras</a></li>
+                <li><a href="javascript:void(0)">Traffic Flow</a></li>
+                <li><a href="javascript:void(0)">USA Highway Forecast</a></li>
+                <li><a href="javascript:void(0)">Driving Tips (New)</a></li>
+                <li><a href="javascript:void(0)">Weather &amp; Your Car (New)</a></li>
+              </ul>
+            </li>
+            <li class="first-level-subnav"><a href="javascript:void(0)">Home &amp; Correction fluid</a>
+              <ul class="second-level-subnav">
+                <li><a href="javascript:void(0)">Lawn &amp; Garden Forecast</a></li>
+                <li><a href="javascript:void(0)">lawn &amp; Garden Tips (New)</a></li>
+                <li><a href="javascript:void(0)">Pets &amp; Weather (New)</a></li>
+                <li><a href="javascript:void(0)">Power Consumption</a></li>
+                <li><a href="javascript:void(0)">Weather &amp; Your Home</a></li>
+                <li><a href="javascript:void(0)">Weather &amp; Your Home Tips (New)</a></li>
+              </ul>
+            </li>
+            <li class="first-level-subnav"><a href="javascript:void(0)">
+              Fountain-pen</a>
+              <ul class="second-level-subnav">
+                <li><a href="javascript:void(0)">Dog Park Report</a></li>
+                <li><a href="javascript:void(0)">Facts of Fishing</a></li>
+                <li><a href="javascript:void(0)">FarmZone</a></li>
+                <li><a href="javascript:void(0)">Golf Report</a></li>
+                <li><a href="javascript:void(0)">Great Outdoors</a></li>
+                <li><a href="javascript:void(0)">Marine Forecast</a></li>
+                <li><a href="javascript:void(0)">Park Report</a></li>
+                <li><a href="javascript:void(0)">SchoolDay Forecast</a></li>
+                <li><a href="javascript:void(0)">ski Report</a></li>
+                <li><a href="javascript:void(0)">Snowmobile Report</a></li>
+                <li><a href="javascript:void(0)">Stargazing</a></li>
+              </ul>
+            </li>
+            <li class="first-level-subnav"><a href="javascript:void(0)">Others</a>
+              <ul class="second-level-subnav">
+                <li><a href="javascript:void(0)">Aches &amp; Pains</a></li>
+                <li><a href="javascript:void(0)">Air Quality</a></li>
+                <li><a href="javascript:void(0)">Bug Report</a></li>
+                <li><a href="javascript:void(0)">Climate Change</a></li>
+                <li><a href="javascript:void(0)">Flu Report</a></li>
+                <li><a href="javascript:void(0)">Forest Fire Watch</a></li>
+                <li><a href="javascript:void(0)">Pollen Report</a></li>
+                <li><a href="javascript:void(0)">Under the Weather (New)</a></li>
+                <li><a href="javascript:void(0)">UV Report</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div id="productContent-header"></div>
+    <div id="productContent-body"></div>
+    <div id="productContent-footer"></div>
+  </main>
+  <footer>
+    <p><small>©Navigation with Lists Inc.</small></p>
+  </footer>
+
+  <script>
+    const productNum = document.getElementById("productNum")
+
+    const increaseTotalProductCount = () => {
+      let oldProductNum = parseInt(productNum.innerText)
+      productNum.innerText = oldProductNum + 1
+    }
+    const decreaseTotalProductCount = () => {
+      let oldProductNum = parseInt(productNum.innerText)
+      oldProductNum && (productNum.innerText = oldProductNum - 1)
+    }
+  </script>
+</body>
+
+</html>
