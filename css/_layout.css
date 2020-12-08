@@ -52,6 +52,10 @@ body {
 }
 #searchIconContainer:hover {
   cursor: pointer;
+  background-color: red;
+}
+#searchIconContainer i {
+  font-size: 18px;
 }
 #cartContainer {
   flex: 3;
@@ -104,7 +108,19 @@ body {
   width: 100%;
   height: 800px;
   background-color: rgb(125, 125, 197);
+  display: flex;
 }
+#productContent-body-left {
+  flex: 5.5;
+  height: 100%;
+  background-color: rgb(209, 142, 192);
+} 
+#productContent-body-right {
+  flex: 4.5;
+  height: 100%;
+  background-color: lightgray;
+}
+
 #productContent-footer {
   width: 100%;
   height: 100px;
