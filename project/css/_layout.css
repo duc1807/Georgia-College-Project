@@ -102,7 +102,11 @@ body {
 #hero-banner {
   width: 100%;
   height: 25rem;
-  background-color: blue;
+  background-color: #ff7d01;
+  background-image: url('https://ascii.jp/img/2016/09/30/541703/l/34ba83e8756b99a0.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 5rem 5rem 5rem 40rem;
 }
 #about-product {
   width: 100%;
@@ -127,6 +131,7 @@ body {
 
 .mySlides {
   display: none;
+  height: 100%;
 }
 
 /* Next & previous buttons */
@@ -197,4 +202,50 @@ body {
 @keyframes fade {
   from {opacity: .5}
   to {opacity: 1}
+}
+
+/* Testimonial container */
+.testimonial-container {
+  margin: 0 auto;
+  width: 90%;
+  height: 100%;
+  background-color: red;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.testimonial-box {
+  width: 30%;
+  height: 80%;
+  background-color: lightyellow;
+}
+
+/* Testimonial box header */
+.testimonial-box-header {
+  width: 100%;
+  height: 35%;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.testimonial-box-avatar {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100px;
+  background-color: rgb(207, 191, 117);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.testimonial-box-content {
+  width: 100%;
+  height: 65%;
+  background-color: rgb(162, 148, 199);
+  padding: 1rem 1rem; 
+}
+.testimonial-box-footer {
+
 }
