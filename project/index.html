@@ -14,113 +14,73 @@
 
 <body>
   <header>
-    <div class="searchContainer">
+    <div class="headerContainer">
       <div id="logoContainer">
-        <img id="logoImg" src="https://i.pinimg.com/originals/eb/4a/59/eb4a593f8a852e1ef612402ee53fdd41.jpg">
+        <img id="logoImg" src="https://www.flaticon.com/svg/static/icons/svg/96/96845.svg">
 
       </div>
-      <div id="searchContent">
-        <input id="searchInput" type="text" placeholder="Search something...">
-        <div id="searchIconContainer">
-          <i class="fas fa-search"></i>
-        </div>
+      <div id="headerContent">
+        <ul class="nopulet ">
+          <li class="first-level-subnav"><a onclick="increaseTotalProductCount()" href="javascript:void(0)"
+              class="nav_link_lv1">
+              Cassette 1
+            </a>
+            <ul class="second-level-subnav">
+              <li><a href="javascript:void(0)">Local Weather</a></li>
+              <li><a href="javascript:void(0)">Hourly Forecast</a></li>
+
+            </ul>
+          </li>
+          <li class="first-level-subnav"><a onclick="decreaseTotalProductCount()" href="javascript:void(0)">Cassette
+              2</a>
+            <ul class="second-level-subnav">
+              <li><a href="javascript:void(0)">Airport Forecast</a></li>
+              <li><a href="javascript:void(0)">Attractions</a></li>
+
+            </ul>
+          </li>
+          <li class="first-level-subnav"><a href="javascript:void(0)">Cassette 3</a>
+            <ul class="second-level-subnav">
+              <li><a href="javascript:void(0)">Canadian Highway Forecast</a></li>
+              <li><a href="javascript:void(0)">Highway Conditions</a></li>
+
+            </ul>
+          </li>
+          <li class="first-level-subnav"><a href="javascript:void(0)">Cassette 4</a>
+            <ul class="second-level-subnav">
+              <li><a href="javascript:void(0)">Lawn &amp; Garden Forecast</a></li>
+              <li><a href="javascript:void(0)">lawn &amp; Garden Tips (New)</a></li>
+
+            </ul>
+          </li>
+          <li class="first-level-subnav"><a href="javascript:void(0)">
+              Cassette 5</a>
+            <ul class="second-level-subnav">
+              <li><a href="javascript:void(0)">Dog Park Report</a></li>
+              <li><a href="javascript:void(0)">Facts of Fishing</a></li>
+
+            </ul>
+          </li>
+          <li class="first-level-subnav"><a href="javascript:void(0)">Others</a>
+            <ul class="second-level-subnav">
+              <li><a href="javascript:void(0)">Aches &amp; Pains</a></li>
+              <li><a href="javascript:void(0)">Air Quality</a></li>
+
+            </ul>
+          </li>
+        </ul>
+
       </div>
       <div id="cartContainer">
-        <div id="cartIconContainer">
-          <i class="fas fa-shopping-cart"></i>
-          <p id="productNum">1</p>
+        <div class="iconContainer">
+          <i class="fas fa-search"></i>
         </div>
 
-      </div>
-    </div>
-    <div class="main-menu" id='main-menu'>
-      <div class="o-container">
-        <nav class='navigation'>
-          <ul class="nopulet ">
-            <li class="first-level-subnav"><a onclick="increaseTotalProductCount()" href="javascript:void(0)"
-                class="nav_link_lv1">
-                Ballpoint Pen <span class="icon-circle-right"></span>
-              </a>
-              <ul class="second-level-subnav">
-                <li><a href="javascript:void(0)">Local Weather</a></li>
-                <li><a href="javascript:void(0)">Hourly Forecast</a></li>
-                <li><a href="javascript:void(0)">14 Day Trend</a></li>
-                <li><a href="javascript:void(0)">Watches &amp; Warnings</a></li>
-                <li><a href="javascript:void(0)">Weather Maps</a></li>
-                <li><a href="javascript:void(0)">Satellite &amp; Radar Maps</a></li>
-                <li><a href="javascript:void(0)">Lightning Maps</a></li>
-                <li><a href="javascript:void(0)">Statistics</a></li>
-                <li><a href="javascript:void(0)">Sun &amp; Normals</a></li>
-                <li><a href="javascript:void(0)">Sun, Moon &amp; Seasons</a></li>
-                <li><a href="javascript:void(0)">Tropical Storm Centre</a></li>
-                <li><a href="javascript:void(0)">Video on Demand</a></li>
-                <li><a href="javascript:void(0)">Weather Cameras</a></li>
-                <li><a href="javascript:void(0)">Your Weather Gallery</a></li>
-              </ul>
-            </li>
-            <li class="first-level-subnav"><a onclick="decreaseTotalProductCount()" href="javascript:void(0)">Pencil</a>
-              <ul class="second-level-subnav">
-                <li><a href="javascript:void(0)">Airport Forecast</a></li>
-                <li><a href="javascript:void(0)">Attractions</a></li>
-                <li><a href="javascript:void(0)">Flight Tracker</a></li>
-                <li><a href="javascript:void(0)">Sunshine Destinations</a></li>
-                <li><a href="javascript:void(0)">Travel Information</a></li>
-                <li><a href="javascript:void(0)">Vacation Bound(New)</a></li>
-              </ul>
-            </li>
-            <li class="first-level-subnav"><a href="javascript:void(0)">Highlighter</a>
-              <ul class="second-level-subnav">
-                <li><a href="javascript:void(0)">Canadian Highway Forecast</a></li>
-                <li><a href="javascript:void(0)">Highway Conditions</a></li>
-                <li><a href="javascript:void(0)">Road Construction</a></li>
-                <li><a href="javascript:void(0)">Traffic Cameras</a></li>
-                <li><a href="javascript:void(0)">Traffic Flow</a></li>
-                <li><a href="javascript:void(0)">USA Highway Forecast</a></li>
-                <li><a href="javascript:void(0)">Driving Tips (New)</a></li>
-                <li><a href="javascript:void(0)">Weather &amp; Your Car (New)</a></li>
-              </ul>
-            </li>
-            <li class="first-level-subnav"><a href="javascript:void(0)">Home &amp; Correction fluid</a>
-              <ul class="second-level-subnav">
-                <li><a href="javascript:void(0)">Lawn &amp; Garden Forecast</a></li>
-                <li><a href="javascript:void(0)">lawn &amp; Garden Tips (New)</a></li>
-                <li><a href="javascript:void(0)">Pets &amp; Weather (New)</a></li>
-                <li><a href="javascript:void(0)">Power Consumption</a></li>
-                <li><a href="javascript:void(0)">Weather &amp; Your Home</a></li>
-                <li><a href="javascript:void(0)">Weather &amp; Your Home Tips (New)</a></li>
-              </ul>
-            </li>
-            <li class="first-level-subnav"><a href="javascript:void(0)">
-                Fountain-pen</a>
-              <ul class="second-level-subnav">
-                <li><a href="javascript:void(0)">Dog Park Report</a></li>
-                <li><a href="javascript:void(0)">Facts of Fishing</a></li>
-                <li><a href="javascript:void(0)">FarmZone</a></li>
-                <li><a href="javascript:void(0)">Golf Report</a></li>
-                <li><a href="javascript:void(0)">Great Outdoors</a></li>
-                <li><a href="javascript:void(0)">Marine Forecast</a></li>
-                <li><a href="javascript:void(0)">Park Report</a></li>
-                <li><a href="javascript:void(0)">SchoolDay Forecast</a></li>
-                <li><a href="javascript:void(0)">ski Report</a></li>
-                <li><a href="javascript:void(0)">Snowmobile Report</a></li>
-                <li><a href="javascript:void(0)">Stargazing</a></li>
-              </ul>
-            </li>
-            <li class="first-level-subnav"><a href="javascript:void(0)">Others</a>
-              <ul class="second-level-subnav">
-                <li><a href="javascript:void(0)">Aches &amp; Pains</a></li>
-                <li><a href="javascript:void(0)">Air Quality</a></li>
-                <li><a href="javascript:void(0)">Bug Report</a></li>
-                <li><a href="javascript:void(0)">Climate Change</a></li>
-                <li><a href="javascript:void(0)">Flu Report</a></li>
-                <li><a href="javascript:void(0)">Forest Fire Watch</a></li>
-                <li><a href="javascript:void(0)">Pollen Report</a></li>
-                <li><a href="javascript:void(0)">Under the Weather (New)</a></li>
-                <li><a href="javascript:void(0)">UV Report</a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
+        <div class="iconContainer">
+          <i class="fas fa-shopping-cart"></i>
+          <p id="productNum">0</p>
+        </div>
+
       </div>
     </div>
   </header>
@@ -128,6 +88,7 @@
     <div id="hero-banner">
       <h1>Myway's Cassette</h1>
       <p>Winter Sale - Discount to 70%</p>
+      <button id="hero-banner-button">Buy now</button>
     </div>
 
     <div id="about-product"></div>
@@ -143,8 +104,26 @@
                 <div class="testimonial-box-avatar"
                   style="background-image: url('https://www.verywellhealth.com/thmb/QWobFb60_KPUxd7JRkNhzD1_9zA=/2667x2000/smart/filters:no_upscale()/GettyImages-133569375-56d1e6185f9b5879cc811e98.jpg');">
                 </div>
+                <h2 class="testimonial-box-name">John Doe</h2>
               </div>
-              <div class="testimonial-box-content"></div>
+              <div class="testimonial-box-content">
+                <div class="testimonial-box-rate">
+                  <div class="testimonial-box-rate-left">
+                    <img class="active-star" src="https://www.flaticon.com/svg/static/icons/svg/1828/1828884.svg"></img>
+                    <img class="active-star" src="https://www.flaticon.com/svg/static/icons/svg/1828/1828884.svg"></img>
+                    <img class="active-star" src="https://www.flaticon.com/svg/static/icons/svg/1828/1828884.svg"></img>
+                    <img class="active-star" src="https://www.flaticon.com/svg/static/icons/svg/1828/1828884.svg"></img>
+                    <img class="active-star" src="https://www.flaticon.com/svg/static/icons/svg/1828/1828970.svg"></img>
+                  </div>
+                  <div class="testimonial-box-rate-right">
+                    <p class="testimonial-box-date">12/9/2020</p>
+                  </div>
+                </div>
+                <div class="testimonial-box-comment">
+                  <p>" I love this thing I’ve used it 24/7 ever since I got it!
+                    And in my opinion it works perfectly that is if you know how to use it. "</p>
+                </div>
+              </div>
               <div class="testimonial-box-footer"></div>
             </div>
             <div class="testimonial-box">
@@ -152,9 +131,28 @@
                 <div class="testimonial-box-avatar"
                   style="background-image: url('https://cdn.5bestthings.com/wp-content/uploads/2020/04/people-2202472_1920-696x955.jpg');">
                 </div>
-
+                <h2 class="testimonial-box-name">John Doe</h2>
               </div>
-              <div class="testimonial-box-content"></div>
+              <div class="testimonial-box-content">
+                <div class="testimonial-box-rate">
+                  <div class="testimonial-box-rate-left">
+                    <img class="active-star" src="https://www.flaticon.com/svg/static/icons/svg/1828/1828884.svg"></img>
+                    <img class="active-star" src="https://www.flaticon.com/svg/static/icons/svg/1828/1828884.svg"></img>
+                    <img class="active-star" src="https://www.flaticon.com/svg/static/icons/svg/1828/1828884.svg"></img>
+                    <img class="active-star" src="https://www.flaticon.com/svg/static/icons/svg/1828/1828884.svg"></img>
+                    <img class="active-star" src="https://www.flaticon.com/svg/static/icons/svg/1828/1828884.svg"></img>
+                  </div>
+                  <div class="testimonial-box-rate-right">
+                    <p class="testimonial-box-date">12/9/2020</p>
+                  </div>
+                </div>
+                <div class="testimonial-box-comment">
+                  <p>" If you have a boombox or portable radio that plays cassette tapes and has a headphone jack, you
+                    can use it instead. Just Google online for the Audacity software. Install it on your PC. Get a cable
+                    that has a 3.5 mm jack on both ends. Plug one end into your boombox headphone hole and the other end
+                    into your sound card's IN hole on the back of your PC. Record with Audacity. Done. "</p>
+                </div>
+              </div>
               <div class="testimonial-box-footer"></div>
             </div>
             <div class="testimonial-box">
@@ -162,8 +160,28 @@
                 <div class="testimonial-box-avatar"
                   style="background-image: url('https://cdn.images.express.co.uk/img/dynamic/79/285x214/349843_1.jpg');">
                 </div>
+                <h2 class="testimonial-box-name">John Doe</h2>
               </div>
-              <div class="testimonial-box-content"></div>
+              <div class="testimonial-box-content">
+                <div class="testimonial-box-rate">
+                  <div class="testimonial-box-rate-left">
+                    <img class="active-star" src="https://www.flaticon.com/svg/static/icons/svg/1828/1828884.svg"></img>
+                    <img class="active-star" src="https://www.flaticon.com/svg/static/icons/svg/1828/1828884.svg"></img>
+                    <img class="active-star" src="https://www.flaticon.com/svg/static/icons/svg/1828/1828884.svg"></img>
+                    <img class="active-star" src="https://www.flaticon.com/svg/static/icons/svg/1828/1828884.svg"></img>
+                    <img class="active-star" src="https://www.flaticon.com/svg/static/icons/svg/1828/1828970.svg"></img>
+                  </div>
+                  <div class="testimonial-box-rate-right">
+                    <p class="testimonial-box-date">12/9/2020</p>
+                  </div>
+                </div>
+                <div class="testimonial-box-comment">
+                  <p>" Works well. As expected, very flimsy plastic construction, but for the price - that was a given.
+                    Plays well with no noticed transfer of interference so far. I have only transferred 2 tapes to
+                    computer so far (about 2 hr & 20 min of recording) but am very satisfied with the unit's operation
+                    and performance. I paid about $20 bucks for the product and have been happy with the purchase. "</p>
+                </div>
+              </div>
               <div class="testimonial-box-footer"></div>
             </div>
           </div>
@@ -199,7 +217,50 @@
     </div>
   </main>
   <footer>
-    <p><small>©Navigation with Lists Inc.</small></p>
+    <div id="footer-information">
+      <div class="footer-information-column">
+        <h4 class="footer-information-topic">Cassette</h4>
+        <p class="footer-information-topic-list">Cassette 1</p>
+        <p class="footer-information-topic-list">Cassette 2</p>
+        <p class="footer-information-topic-list">Cassette 3</p>
+        <p class="footer-information-topic-list">Cassette 4</p>
+      </div>
+      <div class="footer-information-column">
+        <h4 class="footer-information-topic">About Myway</h4>
+        <p class="footer-information-topic-list">Origin</p>
+        <p class="footer-information-topic-list">Term of use</p>
+        <p class="footer-information-topic-list">Warranty</p>
+        <p class="footer-information-topic-list">Policy</p>
+      </div>
+      <div class="footer-information-column">
+        <h4 class="footer-information-topic">Help & FAQs</h4>
+        <p class="footer-information-topic-list">Shipping</p>
+        <p class="footer-information-topic-list">Purchase and Return Policy</p>
+        <p class="footer-information-topic-list">Contact Us</p>
+        <p class="footer-information-topic-list">Customer Service</p>
+      </div>
+      <div class="footer-information-column">
+        <h4 class="footer-information-topic">Other</h4>
+        <p class="footer-information-topic-list">Shipping</p>
+        <p class="footer-information-topic-list">Term of use</p>
+        <p class="footer-information-topic-list">Contact Us</p>
+        <p class="footer-information-topic-list">Customer Service</p>
+      </div>
+    </div>
+    <div id="footer-contact">
+      <div id="footer-contact-top">
+        <div id="footer-contact-top-email">
+          <p id="email-text">Leave your email here: </p>
+          <input placeholder="Email">
+        </div>
+        <div id="footer-contact-top-connect">
+hel
+        </div>
+      </div>
+      <div id="footer-contact-bottom">
+        <p>Copyright @</p>
+      </div>
+    </div>
   </footer>
 
   <script>

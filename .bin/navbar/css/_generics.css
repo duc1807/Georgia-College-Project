@@ -33,15 +33,6 @@ nav,
 section {
   display: block; }
 
-header {
-  position: fixed;
-  top: 0;
-  z-index: 1000;
-  width: 100%;
-}
-main {
-  padding-top: 60px;
-}
 /**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
@@ -63,6 +54,8 @@ main {
   display: block;
   height: fit-content;
   width: 100%;
+
+  background-color: red;
 }
 
 /**

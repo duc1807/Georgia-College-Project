@@ -11,92 +11,7 @@ body {
   height: 100%;
   padding: 0;
 }
-/* Hero banner */
-.searchContainer {
-  height: fit-content;
-  background-color: rgb(114, 95, 95);
-  width: 100%;
-  display: flex;
-}
-#logoContainer {
-  flex: 1.5;
-  display: flex;
-  justify-content: center;
-}
-#searchContent {
-  flex: 5.5;
-  background-color: rgb(103, 209, 77);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#searchInput {
-  height: 6vh;
-  width:  30vw;
-  border: none;
-  outline: none;
-  outline-style: none;  
-  border-top-left-radius: 6px;
-  border-bottom-left-radius: 6px;
-  padding: 0 1vw;
-}
-#searchIconContainer {
-  height: 6vh;
-  width:  6vw;
-  background-color: blue;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#searchIconContainer:hover {
-  cursor: pointer;
-  background-color: red;
-}
-#searchIconContainer i {
-  font-size: 18px;
-}
-#cartContainer {
-  flex: 3;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  background-color: rgb(238, 241, 21);
-}
-#cartIconContainer {
-  display: flex;
-  width: 50px;
-  height: 50px;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  border-radius: 8px;
-  transition: 0.4s;
-}
-#cartIconContainer:hover {
-  transition: 0.4s;
-  background-color: rgba(51, 51, 51, 0.329) !important;
-  border-radius: 8px;
-  cursor: pointer;
-}
-#cartContainer i {
-  font-size: 25px;
-}
-#productNum {
-  background-color: white;
-  border-radius: 100px;
-  height: 20px;
-  width: 20px;
-  font-size: 14px;
-  font-weight: 600;
-  display: flex;
-  justify-content: center;
-  align-items: center ;
-  position: absolute;
-  right: 2px;
-  top: 3px;
-}
+
 
 /* Hero banner */
 #hero-banner {
@@ -116,17 +31,19 @@ body {
 #testimonial {
   width: 100%;
   height: fit-content;
-  background-color: rgb(65, 190, 174);
+  background-color: rgba(17, 17, 17, 0.712);
 }
+
 
 /* Testimonial */
 
 .slideshow-container {
   max-width: 80%;
-  height: 20rem;
-  background-color: lightyellow;
+  height: 25rem;
+  background-color: rgb(0, 0, 0, 0.5);
   position: relative;
   margin: auto;
+  padding: 1rem 0;
 }
 
 .mySlides {
@@ -184,7 +101,7 @@ body {
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #020202;
 }
 
 .fade {
@@ -209,33 +126,35 @@ body {
   margin: 0 auto;
   width: 90%;
   height: 100%;
-  background-color: red;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 .testimonial-box {
   width: 30%;
-  height: 80%;
-  background-color: lightyellow;
+  height: 90%;
 }
 
 /* Testimonial box header */
 .testimonial-box-header {
   width: 100%;
   height: 35%;
-  background-color: green;
+  background-color: rgb(245, 244, 244);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .testimonial-box-avatar {
-  width: 5rem;
-  height: 5rem;
+  width: 4.5em;
+  height: 4.5em;
   border-radius: 100px;
-  background-color: rgb(207, 191, 117);
+  background-color: rgb(179, 179, 179);
   background-repeat: no-repeat;
   background-size: cover;
+}
+.testimonial-box-name {
+  font-size: 17px;
 }
 
 
@@ -243,9 +162,160 @@ body {
 .testimonial-box-content {
   width: 100%;
   height: 65%;
-  background-color: rgb(162, 148, 199);
-  padding: 1rem 1rem; 
+  background-color: rgb(241, 230, 230);
+  display: flex;
+  flex-direction: column;
 }
+.testimonial-box-rate {
+  flex: 2;
+  display: flex;
+}
+.testimonial-box-rate-left {
+  flex: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+.active-star {
+  width: 1.2rem;
+  height: auto;
+  margin-left: 0.3rem;
+}
+.unactive-star {
+  width: 1.2rem;
+  height: auto;
+  margin-left: 0.3rem;
+}
+.testimonial-box-rate-right {
+  flex: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+.testimonial-box-rate-right p {
+  padding: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(177, 174, 174);
+  margin: 0
+}
+
+.testimonial-box-comment {
+  flex: 8;
+  background-color: rgb(240, 240, 240);
+  padding: 1rem 1.5rem;
+  overflow-y: scroll;
+}
+
 .testimonial-box-footer {
 
+}
+
+/* Hero banner content style */
+#hero-banner-button {
+  width: 12rem;
+  height: 3rem;
+  font-size: 16px;
+  border: none;
+  transition: 0.2s;
+}
+#hero-banner-button:hover {
+  cursor: pointer;
+  font-size: 17px;
+}
+
+/* Footer style */
+footer {
+  height: 30rem;
+  width: 100%;
+  background-color: rgb(22, 22, 22);
+  padding: 2rem 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#footer-information {
+  flex: 6;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1.2px solid rgb(90, 90, 90);
+} 
+.footer-information-column {
+  flex: 1;
+  height: 90%;
+  margin: 0 1rem;
+  padding: 0 1rem;
+}
+
+#footer-contact {
+  flex: 4;
+  width: 95%;
+  background-color: lightpink;
+  display: flex;
+  flex-direction: column;
+}
+#footer-contact-top {
+  flex: 5;
+  width: 100%;
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+}
+#footer-contact-bottom {
+  flex: 5;
+  width: 100%;
+  background-color: rgb(57, 168, 67);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#footer-contact-top-email {
+  flex: 5;
+  width: 100%;
+  background-color: rgb(112, 119, 113);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+#email-text {
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  color: white;
+  margin-right: 1rem;
+}
+#footer-contact-top-email input {
+  height: 1.5rem;
+  width: 16rem;
+  padding: 1rem 0.5rem;
+  border-radius: 4px;
+  font-size: 14px;
+  border: none;
+  outline: none;
+}
+#footer-contact-top-email input:focus {
+  border: none;
+  outline: none;
+}
+
+#footer-contact-top-connect {
+  flex: 5;
+  width: 100%;
+  background-color: rgb(187, 197, 188);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-information-topic {
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+}
+.footer-information-topic-list {
+  font-size: 15px;
+  color: white;
 }
