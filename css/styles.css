@@ -1,9 +1,9 @@
 @import "./generics.css";
-@import "./_variables.css";
-@import "./_grid_final.css";
-@import "./_container.css";
-@import "./_dropdown.css";
-@import "./_button.css";
-@import "./_heading_final.css";
-@import "./_layout.css";
-@import "./_custom.css";
+@import "./variables.css";
+@import "./grid_final.css";
+@import "./container.css";
+@import "./dropdown.css";
+@import "./button.css";
+@import "./heading_final.css";
+@import "./layout.css";
+@import "./custom.css";
