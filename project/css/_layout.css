@@ -1,4 +1,5 @@
 body {
+  --submit-icon-width: 22%;
   margin: 0 auto;
   font-family: var(--font-family-sans-serif);
   font-size: var(--base-font-size);
@@ -40,6 +41,7 @@ body {
 .slideshow-container {
   max-width: 80%;
   height: 25rem;
+  border-radius: 5px;
   background-color: rgb(0, 0, 0, 0.5);
   position: relative;
   margin: auto;
@@ -133,13 +135,15 @@ body {
 .testimonial-box {
   width: 30%;
   height: 90%;
+  border-radius: 5px;
+  background-color:  rgb(245, 244, 244);
 }
 
 /* Testimonial box header */
 .testimonial-box-header {
   width: 100%;
   height: 35%;
-  background-color: rgb(245, 244, 244);
+  background-color: transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -202,7 +206,7 @@ body {
 
 .testimonial-box-comment {
   flex: 8;
-  background-color: rgb(240, 240, 240);
+  background-color: transparent;
   padding: 1rem 1.5rem;
   overflow-y: scroll;
 }
@@ -226,7 +230,7 @@ body {
 
 /* Footer style */
 footer {
-  height: 30rem;
+  height: fit-content;
   width: 100%;
   background-color: rgb(22, 22, 22);
   padding: 2rem 6rem;
@@ -242,6 +246,7 @@ footer {
   justify-content: flex-start;
   align-items: center;
   border-bottom: 1.2px solid rgb(90, 90, 90);
+  padding: 2rem 0
 } 
 .footer-information-column {
   flex: 1;
@@ -253,29 +258,35 @@ footer {
 #footer-contact {
   flex: 4;
   width: 95%;
-  background-color: lightpink;
   display: flex;
   flex-direction: column;
+  padding-top: 1.5rem;
 }
 #footer-contact-top {
   flex: 5;
   width: 100%;
-  background-color: red;
   display: flex;
   flex-direction: row;
 }
 #footer-contact-bottom {
   flex: 5;
-  width: 100%;
-  background-color: rgb(57, 168, 67);
+  width: 60%;
+  margin-top: 4rem;
+  align-self: center;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
+  color: whitesmoke;
+  font-size: 14px;
+}
+#footer-contact-bottom p {
+  padding: 0;
+  margin: 0.4rem 0;
 }
 #footer-contact-top-email {
   flex: 5;
   width: 100%;
-  background-color: rgb(112, 119, 113);
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -288,11 +299,41 @@ footer {
   color: white;
   margin-right: 1rem;
 }
+#emailInputContainer {
+  height: 2.5rem;
+  width: fit-content + 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#submitEmailButton {
+  height: 100%;
+  flex: 1;
+  background-color: rgb(150, 147, 147);
+  border-radius: 0 4px 4px 0;
+  display: flex;
+  width: 3.5rem;
+  justify-content: center;
+  align-items: center;
+  transition: .25s;
+}
+#submitEmailButton img {
+  padding: 0;
+  margin: 0;
+  width: var(--submit-icon-width);
+  height: auto;
+  transition: .2s;
+}
+#submitEmailButton:hover {
+  cursor: pointer;
+  background-color: rgb(116, 116, 116);
+}
+
 #footer-contact-top-email input {
-  height: 1.5rem;
+  height: 100%;
   width: 16rem;
-  padding: 1rem 0.5rem;
-  border-radius: 4px;
+  padding: 1rem 0.8rem;
+  border-radius: 4px 0 0 4px;
   font-size: 14px;
   border: none;
   outline: none;
@@ -305,11 +346,45 @@ footer {
 #footer-contact-top-connect {
   flex: 5;
   width: 100%;
-  background-color: rgb(187, 197, 188);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#footer-contact-top-connect-header {
+  flex: 4;
+  width: 100%;
+}
+#footer-contact-top-connect-header h5 {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  color: white;
+  margin-left: 10%;
+}
+#footer-contact-top-connect-content {
+  flex: 6;
+  width: 100%;
+  padding-top: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.contact-icon {
+  width: 1.8rem;
+  height: auto;
+  margin: 0 0.8rem;
+  transition: .25s;
+  filter: brightness(80%)
+}
+.contact-icon:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  filter: brightness(100%)
+}
+
+
+
 .footer-information-topic {
   font-size: 18px;
   font-weight: 700;
@@ -317,5 +392,11 @@ footer {
 }
 .footer-information-topic-list {
   font-size: 15px;
+  color: rgb(182, 182, 182);
+  transition: .3s;
+} 
+.footer-information-topic-list:hover {
+  cursor: pointer;
   color: white;
+  padding-left: 5px;
 }

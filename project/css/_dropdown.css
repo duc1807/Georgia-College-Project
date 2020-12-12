@@ -42,6 +42,7 @@
   width: 100%;
   display: flex;
   background-color: #ffffff;
+  position: relative;
 }
 
 #logoContainer {
@@ -52,11 +53,45 @@
 #logoImg {
   width: 3.5rem;
 }
+#logoImg:hover {
+  cursor: pointer;
+}
 #cartContainer {
   flex: 1.5;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#search-input {
+  transition: all 0.35s ease;
+  background-color: #ffffff;
+  z-index: -5;
+  text-decoration: none;
+  list-style-type: none;
+  height: 5rem;
+  border-top: 2px solid rgb(160, 160, 160);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#search-input input {
+  width: 30%;
+  height: 60%;
+  font-size: 1.2rem;
+}
+
+.search-unactive {
+  position: absolute;
+  top: -101%;
+  left: 0;
+  width: 100%;
+  
+}
+.search-active {
+  position: absolute;
+  top: 101%;
+  left: 0;
+  width: 100%;
 }
 
 .iconContainer {
